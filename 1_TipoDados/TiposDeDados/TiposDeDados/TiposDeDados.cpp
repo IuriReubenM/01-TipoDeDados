@@ -60,6 +60,8 @@ int main()
 	int horas = 0;
 	int minutos = 0;
 	int segundos = 0;
+	
+
 
 	cout << "Digite seu nome: ";
 	cin >> nome;
@@ -69,12 +71,69 @@ int main()
 	horas = dias * 24;
 	minutos = horas  * 60;
 	segundos = minutos * 60;
+	
 
 	cout << "Sua idade em dias e: " << dias << endl;
 	cout << "Sua idade em horas e: " << horas << endl;
 	cout << "Sua idade em minutos e: " << minutos << endl;
 	cout << "Sua idade em segundos e: " << segundos << endl;
 
+	cout << "Qualquer tecla para continuar...";
+	system("pause"); // somente no Windows
+	system("cls");
+
+	
+    //Exercício 2
+	double celsius = 0;
+	double fahrenheit = 0;
+	double kelvin = 0;
+    
+	cout << "Digite a temperatura em Celsius: ";
+	cin >> celsius;
+	
+	fahrenheit = celsius * 1.8 + 32;
+	kelvin = celsius + 273.15;
+	
+	cout << "A temperatura em Fahrenheit e: " << fahrenheit << endl;
+	cout << "A temperatura em Kelvin e: " << kelvin << endl;
+
+	cout << "Qualquer tecla para continuar...";
+	system("pause"); // somente no Windows
+	system("cls");
+
+	//Exercício 3
+	long segundoss, minutoss, horass, diass, segundosrest = 0;
+	
+	cout << "Digite um número que represente segundos: ";
+	cin >> segundoss;
+
+	minutoss = segundoss / 60;
+	horass = minutoss / 3600;
+	diass = horass / 86400;
+	segundosrest = segundoss % 60;
+
+	cout << "Os segundos em minutos e: " << minutoss << endl;
+	cout << "OS segundos em horas e: " << horass << endl;
+	cout << "Os segundos em dias e: " << diass << endl;
+	cout << "Os segundos restantes e: " << segundosrest << endl;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
 	cout << "Qualquer tecla para sair...";
 	system("pause"); // somente no Windows
 
